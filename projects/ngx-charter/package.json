@@ -1,0 +1,9 @@
+{
+  "name": "ngx-charter",
+  "version": "0.0.4",
+  "peerDependencies": {
+    "@angular/common": "^8.2.0",
+    "@angular/core": "^8.2.0",
+    "chart.js": "^2.7.0"
+  }
+}
