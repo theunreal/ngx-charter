@@ -52,11 +52,11 @@ export class ChartComponent implements AfterViewInit, OnDestroy {
     this.cdr.detectChanges();
 
     // Events
-    this.canvas.nativeElement.onclick = (evt) => this.onDataSelect.emit(this.chart.getElementsAtEvent(evt)[0]);
-  }
-
-  update() {
-    this.chart.update();
+    this.canvas.nativeElement.onclick = (evt) => {
+      if (evt) {
+        this.onDataSelect.emit(this.chart.getElementsAtEvent(evt)[0]);
+      }
+    };
   }
 
   ngOnDestroy() {
