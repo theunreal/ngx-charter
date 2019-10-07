@@ -8,13 +8,13 @@ npm install ngx-charter
 
 #### Template
 ```
-<ngx-charter [options]="chartOptions"></ngx-charter>
+<ngx-charter [options]="lineChart"></ngx-charter>
 ```
 
 #### TS
 
 ```
-appsOverTimeChart = {
+lineChart = {
     type: 'line',
     data: {
       datasets: [10, 20, 30],
