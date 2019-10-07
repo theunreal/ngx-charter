@@ -53,7 +53,7 @@ export class ChartComponent implements AfterViewInit, OnDestroy {
 
     // Events
     this.canvas.nativeElement.onclick = (evt) => {
-      if (this.chart.getElementsAtEvent(evt)) {
+      if (this.chart.getElementsAtEvent(evt).length) {
         this.onDataSelect.emit(this.chart.getElementsAtEvent(evt)[0]);
       }
     };
