@@ -18,7 +18,7 @@ lineChart = {
     type: 'line',
     data: {
       datasets: [10, 20, 30],
-      labels: ['Label 1', 'Label 2', ' Label 3]
+      labels: ['Label 1', 'Label 2', 'Label 3']
     },
     options: {
 
